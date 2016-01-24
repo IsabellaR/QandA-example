@@ -42,11 +42,16 @@ public class Answer extends Actor
     {
         // Add your action code here.
         if (Greenfoot.mouseClicked(this)){
-        move(1);
-    
-         ((Blackboard) getWorld()).loadQ();// curLine maintained in Blackboard
-     
-    } 
+           if (isCorrect) {
+               message("That's right.  Good Job");
+            }
+            else {
+               message ("Sorry, incorrect.  You need to study more");
+            }
+            // This could also be put in the message method, after the message is displayed
+            // and disappears. Which makes more sense?
+            ((Blackboard) getWorld()).loadQ();// curLine maintained in Blackboard
+         } 
     }
     public void setCorrect(){
      isCorrect=true;

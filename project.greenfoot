@@ -1,5 +1,5 @@
 #Greenfoot properties
-#Sat Jan 23 15:04:48 PST 2016
+#Sun Jan 24 08:49:03 PST 2016
 target4.type=ClassTarget
 dependency3.from=Answer
 target3.height=50
@@ -33,6 +33,7 @@ target2.typeParameters=
 dependency3.to=TextImage
 target3.showInterface=false
 dependency4.to=Question
+class.Message.superclass=greenfoot.Actor
 target1.showInterface=false
 target4.editor.width=900
 class.Question.superclass=greenfoot.Actor
@@ -75,14 +76,14 @@ target3.editor.height=700
 target3.type=ClassTarget
 target4.width=90
 dependency2.from=Blackboard
-dependency2.type=UsesDependency
 publish.updateDesc=
+dependency2.type=UsesDependency
 world.lastInstantiated=Blackboard
-target2.showInterface=false
 mainWindow.height=744
+target2.showInterface=false
 target3.name=Blackboard
 target1.editor.width=1382
 target3.naviview.expanded=true
-target3.width=90
 project.charset=UTF-8
+target3.width=90
 target4.showInterface=false

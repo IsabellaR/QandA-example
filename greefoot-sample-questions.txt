@@ -1,4 +1,4 @@
 1) How old are you?, a) 14, b) 15,c) 16,d) 17,2
 2) What color hair do you have?, a) Brown,b) Blond,c) Red,d) Gray,0
 3) What city were you born in?, a) Dublin,b) Pleasanton,c) San Ramon,d) Other,3
-4) How many brothers and sisters do you have?, a) 0,b) 1,c) 2,d)more than 2,2
+4) How many brothers and sisters do you have?,a) 0,b) 1,c) 2,d)more than 2,2
