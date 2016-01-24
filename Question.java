@@ -15,6 +15,7 @@ public class Question extends Actor
     String question;
     Answer[] ans = new Answer[4];
     int correctAnswer;
+    private boolean addAns=true;
     
     
      public Question(String q){
@@ -40,7 +41,7 @@ public class Question extends Actor
       ans[2]=new Answer(a2);
       ans[3]=new Answer(a3);
       
-      // CorrectAns points to the element in the array that is the right answer.  
+      // CorrectAnswer points to the element in the array that is the right answer.  
       // By convention, the constructor sets the boolean isCorrect to false.
       
       ans[correctAnswer].setCorrect();  // set this ans to correct
@@ -59,8 +60,11 @@ public class Question extends Actor
     public void act() 
     {
         // Add your action code here.
+        if (addAns){
          addAnswers();
-         Greenfoot.stop();
+         addAns=false;
+        }
+       //  Greenfoot.stop();
     } 
     
     public void addAnswers(){
@@ -71,7 +75,8 @@ public class Question extends Actor
        getWorld().addObject(ans[2],xStart,yStart+40);
        getWorld().addObject(ans[3],xStart,yStart+60);
     }
-    
+
+
     // We use this code in each of our constructors, so create a single method
     // to create a background image from the question string
     // Once created, we set the question object's image to this string image
